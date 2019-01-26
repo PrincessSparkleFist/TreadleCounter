@@ -10,8 +10,8 @@ function doTheThing(){
 
 function makekMoreRows(){
   let moreRows = prompt("Your pattern is: " + treadPattern + ". Do you want to add more rows? Type Yes or No.");
-  if (moreRows == "Yes") {addRow();}
-  else if (moreRows == "No"){treadCounter();}
+  if (moreRows == "Yes" || moreRows == "yes") {addRow();}
+  else if (moreRows == "No" || moreRows == "no"){treadCounter();}
   else do {
     moreRows = prompt("I didn't understand that answer. Please type Yes or No.");
     if (moreRows == "Yes") {addRow();}
