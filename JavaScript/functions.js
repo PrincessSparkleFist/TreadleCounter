@@ -13,11 +13,11 @@ function makekMoreRows(){
   if (moreRows == "Yes" || moreRows == "yes") {addRow();}
   else if (moreRows == "No" || moreRows == "no"){treadCounter();}
   else do {
-    moreRows = prompt("I didn't understand that answer. Please type Yes or No.");
-    if (moreRows == "Yes") {addRow();}
-    else if (moreRows == "No"){treadCounter();}
+    moreRows = prompt("I didn't understand that answer. Please type 'Yes' or 'No'.");
+    if (moreRows == "Yes" || moreRows == "yes") {addRow();}
+    else if (moreRows == "No" || moreRows == "no"){treadCounter();}
   }
-  while (moreRows !="Yes" && moreRows != "No");
+  while (moreRows !="Yes" || moreRows != "yes" || moreRows != "No" || moreRows != "no");
 }
 
   function treadCounter() {
