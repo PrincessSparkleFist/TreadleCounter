@@ -17,6 +17,7 @@ function makekMoreRows(){
     if (moreRows == "Yes" || moreRows == "yes") {addRow();}
     else if (moreRows == "No" || moreRows == "no"){treadCounter();}
   }
+  }
 
 
   function treadCounter() {
